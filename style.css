@@ -1,0 +1,141 @@
+ /* *{
+    margin:0;
+    padding:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: beige;
+}
+
+h2{
+    font-size: 2rem;
+    text-align: center;
+    color:cornflowerblue;
+    
+}
+
+.game{
+    display: grid;
+    margin: 40px auto;
+    grid-template-columns: repeat(4,120px);
+    grid-row-gap:2em;
+    align-items: center;
+    justify-content: center;
+}
+.won{
+    font-size:3em;
+    display:flex;
+    justify-content:center;
+    height:500px;
+    align-items: center;
+    color:blue;
+    width:500px;
+    margin:0px auto;
+}
+
+#gameBoard div{
+    height : 150px;
+    width : 80px;
+    border: 2px solid rgb(151,151,202);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: brown;
+    background-color: #e5e5f7;
+}
+
+.cardback{
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image:  linear-gradient(135deg, #444cf7 25%, transparent 25%), linear-gradient(225deg, #444cf7 25%, transparent 25%), linear-gradient(45deg, #444cf7 25%, transparent 25%), linear-gradient(315deg, #444cf7 25%, #e5e5f7 25%);
+    background-position:  10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
+}
+
+#gameBoard div:hover{
+    cursor:pointer;
+} 
+
+ */
+ * {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: cornflowerblue;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.game {
+    display: grid;
+    margin: 40px auto;
+    grid-template-columns: repeat(4, 120px);
+    grid-row-gap: 2em;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.won {
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    align-items: center;
+    color: blue;
+    width: 500px;
+    margin: 0px auto;
+}
+
+#gameBoard div {
+    height: 150px;
+    width: 80px;
+    border: 2px solid rgb(151, 151, 202);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: brown;
+    background-color: #e5e5f7;
+}
+
+.cardback {
+    background-color: #ffffff;
+    background-image: linear-gradient(145deg, #ff8a00 25%, transparent 25%), 
+                      linear-gradient(225deg, #ff8a00 25%, transparent 25%), 
+                      linear-gradient(45deg, #ff8a00 25%, transparent 25%), 
+                      linear-gradient(315deg, #ff8a00 25%, #ffffff 25%);
+    background-position: 20px 0, 20px 0, 0 0, 0 0;
+    background-size: 40px 40px;
+    background-repeat: repeat;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 
+                0 6px 20px rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.cardback:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#gameBoard div:hover {
+    cursor: pointer;
+}
